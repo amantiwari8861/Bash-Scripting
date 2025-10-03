@@ -7,8 +7,8 @@ It can span multiple lines.
 COMMENT
 
 
-echo "Hello World"
-echo "This is a basic shell script."
+# echo "Hello World"
+# echo "This is a basic shell script."
 
 # to run this script, use the command: bash Basics.sh or ./Basics.sh (after giving execute permission using chmod +x Basics.sh) on linux or macOS terminal.
 # On Windows, you can use Git Bash or WSL to run bash scripts.
