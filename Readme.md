@@ -6,13 +6,14 @@
    - Bash is one of the most popular shells used in Unix-like operating systems, including Linux and macOS.
 
 - **In simple terms**:
-   - Terminal → The window or interface where you type commands.
-   - Shell → The program that interprets your commands.
-   - Bash (Bourne Again Shell) is a Unix/Linux shell and command language.
-   - It is widely used for automation, system administration, and program execution.
-   - A Bash script is a plain text file containing a series of commands executed by the Bash interpreter.
+  - Terminal → The window or interface where you type commands.
+  - Shell → The program that interprets your commands.
+  - Bash (Bourne Again Shell) is a Unix/Linux shell and command language.
+  - It is widely used for automation, system administration, and program execution.
+  - A Bash script is a plain text file containing a series of commands executed by the Bash interpreter.
 
 ## Why Use Shells/Terminals
+
 - Automate repetitive tasks via scripts.
 - Access low-level OS features not available in GUI.
 - Remote system administration (via SSH).
@@ -20,25 +21,27 @@
 - Software development and DevOps automation.
 
 ## Comparison of Popular Shells
-| Shell / Environment        | Features                                                                                     | Default on / Notes                                   |
-|----------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| Bash (Bourne Again Shell)  | Most common, scripting-friendly, POSIX-compliant, supports functions, arrays, loops, etc.  | Most Linux distros                                  |
-| Zsh (Z Shell)              | Advanced features: autocompletion, globbing, themes, plugins (Oh My Zsh)                   | macOS (default in recent versions), optional in Linux |
-| CMD (Command Prompt)       | Basic commands (dir, copy, del), batch scripting                                           | Default Windows shell since DOS era                |
-| PowerShell                 | Object-oriented, advanced scripting, access to .NET APIs, supports pipelines               | Modern replacement for CMD, default in recent Windows |
-| WSL (Windows Subsystem for Linux) | Runs Linux distributions natively in Windows, supports Bash, Zsh, and other Linux shells | Optional feature in Windows 10/11, requires installation |
-| Git Bash                   | Provides a Bash emulation environment on Windows, includes Git command line tools           | Comes with Git for Windows installation            |
+
+| Shell / Environment               | Features                                                                                  | Default on / Notes                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Bash (Bourne Again Shell)         | Most common, scripting-friendly, POSIX-compliant, supports functions, arrays, loops, etc. | Most Linux distros                                       |
+| Zsh (Z Shell)                     | Advanced features: autocompletion, globbing, themes, plugins (Oh My Zsh)                  | macOS (default in recent versions), optional in Linux    |
+| CMD (Command Prompt)              | Basic commands (dir, copy, del), batch scripting                                          | Default Windows shell since DOS era                      |
+| PowerShell                        | Object-oriented, advanced scripting, access to .NET APIs, supports pipelines              | Modern replacement for CMD, default in recent Windows    |
+| WSL (Windows Subsystem for Linux) | Runs Linux distributions natively in Windows, supports Bash, Zsh, and other Linux shells  | Optional feature in Windows 10/11, requires installation |
+| Git Bash                          | Provides a Bash emulation environment on Windows, includes Git command line tools         | Comes with Git for Windows installation                  |
 
 ## Bash Scripting Topics
 
 - Introduction to Bash
 - Bash Comments
 - Bash Variables
-- Bash Conditional Expression
 - Bash Expansion
-- Bash Case Statements
 - Bash Special Characters
 - Bash if elif else
+- Bash Conditional Expression
+- Bash Case Statements
+
 - Bash Loops
 - Bash Appends Strings
 - Bash Functions
@@ -75,7 +78,6 @@ Note: Change the path separator based on your OS:
 
 - windows -> \
 - linux(POSIX) or macOs -> /
-
 
 ```bash
 
@@ -145,7 +147,7 @@ Note: Change the path separator based on your OS:
 # cd ..  # Change directory to parent
 # export MY_VAR="SomeValue"  # Set an environment variable
 # echo $MY_VAR  # Access the environment variable
-# grep "text" file.txt  # Search for "text" in file.txt 
+# grep "text" file.txt  # Search for "text" in file.txt
 # sed 's/old/new/g' file.txt  # Replace "old" with "new" in file.txt
 # awk '{print $1}' file.txt  # Print the first column of file.txt
 # curl http://example.com  # Fetch content from a URL
