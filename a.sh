@@ -71,3 +71,21 @@
 # else
 #     echo "a is equal to 10"
 # fi
+
+
+
+
+# for i in {1..5}; do
+#   echo "Iteration $i"
+# done
+
+# a=10
+# while [ $a -gt 0 ]; do
+#   echo "Countdown: $a"
+#   ((a--))
+# done
+
+a=2.5
+b=4.2
+sum=$(awk "BEGIN {print $a + $b}")
+echo "Sum of $a and $b is: $sum"

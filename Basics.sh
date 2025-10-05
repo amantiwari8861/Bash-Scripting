@@ -79,7 +79,6 @@ COMMENT
 #     echo "invalid marks"
 # fi
 
-#!/bin/bash
 
 # read -p "Enter your marks: " marks
 
@@ -143,3 +142,136 @@ COMMENT
 #     7) echo "Sunday";;
 #     *) echo "Invalid day number";;
 # esac
+
+
+# Loops : repeat a block of code multiple times
+
+# i=1
+# res=((i=i+1))
+# i=$((i+1)) # i=i+1
+# res=$((i++)) # post-increment: use the value first, then increment
+# res=$((++i)) # pre-increment: increment the value first, then use
+
+# echo "i=$i"
+# echo "res=$res"
+
+# i=1
+# i=`expr $i + 1` # expr is used to evaluate expressions
+# echo "i=$i"
+
+# for i in 1 2 3 4 5
+# do
+#     echo "i=$i"
+# done
+
+# for i in {1..10}  # {start..end}
+# for i in {1..10..2}  # {start..end..step}
+# do
+#     # echo -n "i=$i " # -n is used to print in the same line
+#     echo -n -e "i=$i\t" # -n means no new line, -e enables interpretation of backslash escapes
+# done
+
+# for i in Aman Akash Ankit
+# do
+#     echo "name=$i"
+# done
+
+# for ((i=1;i<=10;i++)) # C-style for loop
+# do
+#     echo "i=$i"
+# done
+
+# i=1 # initialization
+# while [ $i -le 10 ] # condition
+# do
+#     echo -n -e "i=$i\t" # statements
+#     ((i++)) # i=i+1 # increment
+# done
+
+# i=1 # initialization
+# until [ $i -gt 10 ] # condition
+# do
+#     echo -n -e "i=$i\t" # statements
+#     ((i++)) # i=i+1 # increment
+# done
+
+# select name in Aman Akash Ankit Rohan
+# do
+#     echo "name=$name"
+#     if [ $name == "Rohan" ]; then
+#         echo "Exiting..."
+#         break
+#     fi
+# done
+# echo "u selected $name"
+
+# String : a sequence of characters
+# str1="Hello"
+# str2='World'
+# str4=`echo $str1 $str2` # command substitution
+
+# echo "str1=$str1"
+# echo "str2=$str2"
+# echo "str3=$str3"
+# echo "str4=$str4"
+
+# msg="the quick brown fox jumps over the lazy dog"
+# # append in string
+# msg+=" and runs away ."
+# echo "msg=$msg"
+# echo "length of msg=${#msg}" # length of string
+# echo "msg in uppercase=${msg^^}" # convert to uppercase
+# echo "msg in lowercase=${msg,,}" # convert to lowercase
+# echo "substring =${msg:16:3}" # extract substring (start index, length)
+# echo "substring from index 4 to 8=${msg:4:5}" # extract substring (start index, length)
+# echo "substring from index 10 to end=${msg:10}" # extract substring (start index to end)
+# echo "index of first occurrence of 'o'=${msg%%o*}" # index of first occurrence of 'o'
+# echo "index of last occurrence of 'o'=${msg##*o}" # index of last occurrence of 'o'
+# echo "replace first occurrence of 'o' with 'O'=${msg/o/O}" # replace first occurrence of 'o' with 'O'
+# echo "replace all occurrences of 'o' with 'O'=${msg//o/O}" # replace all occurrences of 'o' with 'O'
+# echo "replace 'the' with 'a'=${msg/the/a}" # replace first occurrence of 'the' with 'a'
+# echo "replace all occurrences of 'the' with 'a'=${msg//the/a}" # replace all occurrences of 'the' with 'a'
+# echo "extract words from msg:"
+# select word in $msg
+# do
+#     echo "$word"
+#     if [ $word == "exit" ]; then
+#         echo "Exiting..."
+#         break
+#     fi
+# done
+
+# functions : 
+
+# function greet() 
+# {
+#     echo "Hello Sir"
+# }
+# greet
+# greet
+# greet
+# greet
+
+# greet(){
+#     echo "Hello There"
+# }
+
+# greet
+# greet
+# greet
+
+# add(){
+#     n1=$1
+#     n2=$2
+#     echo "the sum of $n1 and $n2 is $((n1+n2))"
+# }
+# echo "returned value is :$(add 10 20)"
+
+# with argument and with return type
+# add()
+# {
+#     echo $(($1+$2))
+# }
+
+# res=$(add 10 20)
+# echo "res=$res"

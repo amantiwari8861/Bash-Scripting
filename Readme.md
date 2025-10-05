@@ -41,10 +41,10 @@
 - Bash if elif else
 - Bash Conditional Expression
 - Bash Case Statements
-
 - Bash Loops
 - Bash Appends Strings
 - Bash Functions
+
 - Bash Loop-File
 - Bash Arrays
 
