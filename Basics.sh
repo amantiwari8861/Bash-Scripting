@@ -275,3 +275,94 @@ COMMENT
 
 # res=$(add 10 20)
 # echo "res=$res"
+
+
+# Looping in File 
+
+fileName="./Hello.txt"
+# fileName="C:\\Users\\admin\\Desktop\\cleaner.bat"
+
+# while read -r line; 
+# do
+#     echo "$line"
+# done < "$fileName"
+
+
+# for line in $(cat $fileName); do
+#   echo "$line"
+# done
+
+
+# filename="users.csv"
+
+# while IFS=',' read -r name age city; do
+#   echo "Name: $name | Age: $age | City: $city"
+# done < "$filename"
+
+# echo "Hello" > h.txt
+# echo "Hello" >> h.txt
+
+
+# read -p "Enter your name:" name
+
+# echo "Your name is: $name" > output.txt
+# echo "✅ Written to output.txt"
+
+
+# Array : Homogeneous collection of data
+
+# arr=(10 20 30 40)
+# echo "Total elements: ${#arr[@]}"
+
+# for e in ${arr[@]};
+# do
+#     echo "$e"
+# done
+
+# len=${#arr[@]}
+# echo "length :$len"
+
+# for ((i=0;i<$len;i++));
+# do
+#     # echo "at index position $i value= ${arr[$i]}"
+#     echo "${arr[$i]}" >> output.txt
+# done
+
+
+# Step 1: Take number of subjects
+# read -p "Enter number of subjects: " n
+
+# # Step 2: Initialize array
+# marks=() # 10 20 30
+
+# # Step 3: Loop to take marks input and store in array
+# for (( i=0; i<n; i++ )); do
+#     read -p "Enter marks for subject $((i+1)): " mark
+#     marks+=("$mark")
+# done
+
+# # Step 4: Calculate sum
+# sum=0
+# for mark in "${marks[@]}"; do
+#     sum=$((sum + mark))
+# done
+
+# # Step 5: Calculate percentage using awk
+# percentage=$(awk "BEGIN { printf \"%.2f\", ($sum / ($n * 100)) * 100 }")
+
+# # Step 6: Display results
+# echo "------------------------------------"
+# echo "Marks: ${marks[@]}"
+# echo "Total Marks: $sum"
+# echo "Percentage : $percentage %"
+# echo "------------------------------------"
+
+
+api_url="https://example.com/api"
+
+for i in {1..1000}; do
+    echo "Request #$i"
+    curl -s -X POST "$api_url" \
+         -H "Content-Type: application/json" \
+         -d '{"name":"Aman","id":'$i'}'
+done
